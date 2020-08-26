@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Chris Moschler</title>
+		<meta charset="uft-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../css/services4.css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+</head>
+<a name="top"></a>
+<body>
+	<div id="bigwrap">
+	
+		<header>
+			<a href="../index.html"><img class="logo" src="../images/logo_green.png" /></a>
+				<nav>
+					<a class="burger"></a>
+					<ul>
+						<div class="mainnav">
+						<li><a href="../html/about.html"><img class="navtext" src="../images/nav3.png" /> <img class="navunder" src="../images/underline_green.png" /> </a></li>
+						</div>
+						<div class="mainnav">
+						<li><a href="../html/services.html"><img class="navtext" src="../images/nav1.png" /> <img class="navunder" src="../images/underline_green.png" /> </a></li>
+						</div>
+						<div class="mainnav">
+						<li><a href="../index.html"><img class="navtext" src="../images/nav2.png" /> <img class="navunder" src="../images/underline_green.png" /> </a></li>
+						</div>
+					</ul>
+				</nav>
+		</header>
+	
+		<div class="section">
+			<section>
+				<div id="toptext">
+				<h1>Capturing the world’s good side</h1>
+
+				Photographs are a very important part of any media. A high quality photo employing striking composition and photography 
+				techniques can make the difference between a visually engaging and memorable article or website, and one that is mundane 
+				and easily forgettable.</br></br>
+
+				Part of my skillset includes the ability to provide my own high quality photos for your needs, instead of relying on 
+				licensing images or hunting for generic royalty free photos.
+				</div>
+				
+				<div class="imagewrapper">
+				<img id="mainImage1" height="250px" width="500px"
+					src="../images/sliderthumb14.png" style="border:3px solid rgba(25, 44, 86, 0);"/>
+				<br />
+					<div id="myDiv1" onclick="changeImage1(event)">
+						<img class="imgStyle" src="../images/sliderthumb14.png" />
+						<img class="imgStyle" src="../images/sliderthumb12.png" />
+						<img class="imgStyle" src="../images/sliderthumb13.png" />
+					</div>
+				
+				<a href="../html/photography.html"><img class="button" src="../images/button4.png" /></a>
+				
+				</div>
+				
+			</section>
+			
+			
+			<div class="textboxes">
+			<h1>Promotional Photos </h1>
+
+			I can easily provide high quality and aesthetically pleasing photographs of your product, organization, or venue, and integrate them into your project seamlessly. 
+			</div>
+			
+			<div class="textboxes">
+			<h1>Supporting Imagery</h1>
+
+			All designs need some sort of supporting imagery to go along with them, and in a lot of cases a photograph that embodies the key elements and core values of your company can do wonders to unify a design. I am able to provide
+			custom photography that achieves this, as well as work with you to determine exactly what sort of image should be used based off of your individual project. 
+			</div>
+			
+			<div class="endtext">
+			<h1>Interested in More Information? <a href="../html/about.html"><span>Let’s Talk.</span></a></h1>
+			</div>
+		
+		
+		
+		
+		</div>
+	</div>
+	
+	<footer>
+		<div id="footerwrap">
+			<div id="foot1">
+				<span>Say Hello!</span></br>
+				cmoschler@chrismoschler.com</br></br>
+					<ul>
+						<li><a href="https://www.facebook.com/Christopher-Moschler-1939186732972583/"><img class="social" src="../images/social1.png" /></a></li>
+						<li><a href="https://twitter.com/CMoschler"><img class="social" src="../images/social2.png" /></a></li>
+						<li><a href="https://cmoschler.tumblr.com/"><img class="social" src="../images/social3.png" /></a></li>
+						<li><a href="https://www.youtube.com/channel/UCwa985_ST1g4NpV_vK3ycRg"><img class="social" src="../images/social4.png" /></a></li>
+						<li><a href="http://drmaniacal.deviantart.com/"><img class="social" src="../images/social5.png" /></a></li>
+					</ul>
+			</div>
+		
+			<a href="#top"><div id="button">BACK TO TOP ^ ^</div></a>
+			
+				<div id="foot2">
+				<span id="navigation">Navigation</span></br></br>
+						<ul>
+							<li><a href="html/services.html">Services</a></li>
+							<li><a href="html/about.html">About Me</a></li>
+							<li><a href="html/branding.html">Branding & Logo Design</a></li>
+							<li><a href="html/printmedia.html">Print Media</a></li>
+							<li><a href="html/webdesign.html">Web Design</a></li>
+							<li><a href="html/illustration.html">Illustration</a></li>
+							<li><a href="html/photography.html">Photography</a></li>
+						</ul>
+			</div>
+			
+			<div id="foot3">
+				<span>Have a Project in Mind?</span></br></br>
+				Feel free to drop me an email with an
+				overview of what you are looking to have 
+				made. You can expect a response within 
+				one business day.
+			</div>
+		</div>
+		
+		<div id="copyright">
+		&copy; Chris Moschler 2017
+		</div>
+		
+		
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="../javascript/menu.js"></script>
+	
+	<script type="text/javascript">
+		var images = document.getElementById("myDiv1").getElementsByTagName("img");
+		
+		for (var i=0; i < images.length; i++){
+			images[i].onmouseover = function () {
+				this.style.cursor = 'hand';
+				this.style.borderColor = '#1f6db6';
+			}
+			images[i].onmouseout = function () {
+				this.style.cursor = 'pointer';
+				this.style.borderColor = 'rgba(25, 44, 86, 0)';
+			}
+		}
+		
+		function changeImage1(event) {
+			event = event || window.event;
+			var targetElement = event.target || event.srcElement;
+			if (targetElement.tagName == "IMG"){
+			document.getElementById("mainImage1").src = targetElement.getAttribute("src");
+			}
+		}
+	</script>
+</body>
+</html>

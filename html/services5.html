@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Chris Moschler</title>
+		<meta charset="uft-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../css/services4.css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+</head>
+<a name="top"></a>
+<body>
+	<div id="bigwrap">
+	
+		<header>
+			<a href="../index.html"><img class="logo" src="../images/logo_green.png" /></a>
+				<nav>
+					<a class="burger"></a>
+					<ul>
+						<div class="mainnav">
+						<li><a href="../html/about.html"><img class="navtext" src="../images/nav3.png" /> <img class="navunder" src="../images/underline_green.png" /> </a></li>
+						</div>
+						<div class="mainnav">
+						<li><a href="../html/services.html"><img class="navtext" src="../images/nav1.png" /> <img class="navunder" src="../images/underline_green.png" /> </a></li>
+						</div>
+						<div class="mainnav">
+						<li><a href="../index.html"><img class="navtext" src="../images/nav2.png" /> <img class="navunder" src="../images/underline_green.png" /> </a></li>
+						</div>
+					</ul>
+				</nav>
+		</header>
+	
+		<div class="section">
+			<section>
+				<div id="toptext">
+				<h1>Websites that function as well as they look</h1>
+
+				Having a website that looks good is important, but having a webstire that functions well is essential. We will work together to create a website that achieves both of these things. The end result will be a site that
+				matches your visual identitity while providing an interface tailored to your target market to provide the best user experience possible, that communicates all the information you require.
+				</div>
+				
+				<div class="imagewrapper">
+				<img id="mainImage1" height="250px" width="500px"
+					src="../images/sliderthumb10.png" style="border:3px solid rgba(25, 44, 86, 0);"/>
+				<br />
+					<div id="myDiv1" onclick="changeImage1(event)">
+						<img class="imgStyle" src="../images/sliderthumb10.png" />
+						<img class="imgStyle" src="../images/sliderthumb11.png" />
+					</div>
+				
+				<a href="../html/webdesign.html"><img class="button" src="../images/button4.png" /></a>
+				
+				</div>
+				
+			</section>
+			
+			
+			<div class="textboxes">
+			<h1>User Interface and Experience </h1>
+
+			How a user interacts with a website is the most critical element in web design. For this reason I typically focus on building sites around a simple, easy-to-use interface 
+			and navigation that will easily communicate all the information it needs to. To determine how this layout will be structured, we will analyze your target market as well as 
+			the content of the website, and build it from there. 
+			</div>
+			
+			<div class="textboxes">
+			<h1>Responsive Design</h1>
+
+			The people who view your website will be doing so from all manner of devices with a wide range of screen sizes. The sites I design are all mobile friendly, and will conform 
+			to fit any screen size whether it be a widescreen monitor, tablet, or the smallest smartphone on the market. 
+			</div>
+			
+			<div class="textboxes">
+			<h1>Hosting and Website Management</h1>
+
+			Once your website is completed and ready to launch, you can host it yourself or I can help you. Once it is live, I will be available to work with you and make any future changes 
+			or fixes that may need to be implemented. 
+			</div>
+			
+			<div class="endtext">
+			<h1>Interested in More Information? <a href="../html/about.html"><span>Let’s Talk.</span></a></h1>
+			</div>
+		
+		
+		
+		
+		</div>
+	</div>
+	
+	<footer>
+		<div id="footerwrap">
+			<div id="foot1">
+				<span>Say Hello!</span></br>
+				cmoschler@chrismoschler.com</br></br>
+					<ul>
+						<li><a href="https://www.facebook.com/Christopher-Moschler-1939186732972583/"><img class="social" src="../images/social1.png" /></a></li>
+						<li><a href="https://twitter.com/CMoschler"><img class="social" src="../images/social2.png" /></a></li>
+						<li><a href="https://cmoschler.tumblr.com/"><img class="social" src="../images/social3.png" /></a></li>
+						<li><a href="https://www.youtube.com/channel/UCwa985_ST1g4NpV_vK3ycRg"><img class="social" src="../images/social4.png" /></a></li>
+						<li><a href="http://drmaniacal.deviantart.com/"><img class="social" src="../images/social5.png" /></a></li>
+					</ul>
+			</div>
+		
+			<a href="#top"><div id="button">BACK TO TOP ^ ^</div></a>
+			
+				<div id="foot2">
+				<span id="navigation">Navigation</span></br></br>
+						<ul>
+							<li><a href="html/services.html">Services</a></li>
+							<li><a href="html/about.html">About Me</a></li>
+							<li><a href="html/branding.html">Branding & Logo Design</a></li>
+							<li><a href="html/printmedia.html">Print Media</a></li>
+							<li><a href="html/webdesign.html">Web Design</a></li>
+							<li><a href="html/illustration.html">Illustration</a></li>
+							<li><a href="html/photography.html">Photography</a></li>
+						</ul>
+			</div>
+			
+			<div id="foot3">
+				<span>Have a Project in Mind?</span></br></br>
+				Feel free to drop me an email with an
+				overview of what you are looking to have 
+				made. You can expect a response within 
+				one business day.
+			</div>
+		</div>
+		
+		<div id="copyright">
+		&copy; Chris Moschler 2017
+		</div>
+		
+		
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="../javascript/menu.js"></script>
+	
+	<script type="text/javascript">
+		var images = document.getElementById("myDiv1").getElementsByTagName("img");
+		
+		for (var i=0; i < images.length; i++){
+			images[i].onmouseover = function () {
+				this.style.cursor = 'hand';
+				this.style.borderColor = '#1f6db6';
+			}
+			images[i].onmouseout = function () {
+				this.style.cursor = 'pointer';
+				this.style.borderColor = 'rgba(25, 44, 86, 0)';
+			}
+		}
+		
+		function changeImage1(event) {
+			event = event || window.event;
+			var targetElement = event.target || event.srcElement;
+			if (targetElement.tagName == "IMG"){
+			document.getElementById("mainImage1").src = targetElement.getAttribute("src");
+			}
+		}
+	</script>
+</body>
+</html>
